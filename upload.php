@@ -39,7 +39,9 @@ $objCounter = 1;
         }
     </style>";
     
-    for ($i=0; $i < $array[0] ; $i++) { 
+    for ($i=0; $i < $array[0] ; $i++) {
+        $array[$objCounter * 3] = str_replace(array('[',']'), '',$array[$objCounter * 3]); 
+        $array[$objCounter * 3] = explode(',',  $array[$objCounter * 3]);
         $width = $array[($objCounter*3) + 1];
         $height = $array[($objCounter*3) + 2];
         $x = $array[($objCounter*3)][0];
