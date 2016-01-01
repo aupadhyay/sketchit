@@ -53,11 +53,13 @@ void thresh_callback(int, void*){
 		//minEnclosingCircle((Mat)contours_poly[i], center[i], radius[i]);
 	}
 
-
+	Size s = src.size();
 	/// Draw polygonal contour + bonding rects + circles
 	vector<Point> array(boundRect.size());
 	Mat drawing = Mat::zeros(threshold_output.size(), CV_8UC3);
 	cout << boundRect.size() << "\n";
+	cout << s.width << "\n";
+	cout << s.height << "\n";
 	for (int i = 0; i< contours.size(); i++)
 	{
 		Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
