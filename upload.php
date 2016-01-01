@@ -26,14 +26,9 @@ if ($uploadOk == 0) {
         //echo "Sorry, there was an error uploading your file." . "<br>";
     }
 }
-
-include "autoHTML.php";
-
-
-
 exec("./main uploads/fileToUpload.png", $array);
 print_r($array);
-
+echo "running upload";
 
 $objCounter = 1;
 
