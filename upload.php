@@ -44,12 +44,6 @@ $objCounter = 1;
             bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
         </script>';
 
-    echo "<style>
-        div{
-            position: absolute;
-            overflow: auto;
-        }
-    </style>";
     
     for ($i=0; $i < $array[0] ; $i++) {
         $array[$objCounter * 3] = str_replace(array('[',']'), '',$array[$objCounter * 3]); 
