@@ -26,11 +26,20 @@ if ($uploadOk == 0) {
         //echo "Sorry, there was an error uploading your file." . "<br>";
     }
 }
+
+
 exec("./main uploads/fileToUpload.png", $array);
-print_r($array);
-echo "running upload";
 
 $objCounter = 1;
+    echo 'link rel="stylesheet" href="style.css">
+        </head>
+        <script src="interact.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="nicEdit.js" type="text/javascript"></script>
+        <script src="script.js"></script>
+        <script type="text/javascript">
+            bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+        </script>';
 
     echo "<style>
         div{
@@ -50,9 +59,14 @@ $objCounter = 1;
         echo "<div style='width:".($width/$array[1]) * 100 ."%;
                 height: ".($height/$array[2]) * 100 ."%;
                 border: 1px solid;
-                margin-left: ".($x/$array[1]) * 100 ."vw;
-                margin-top: ".($y/$array[2]) * 100 ."vh;'>FIRST</div>";
+                margin-left: calc(".($x/$array[1]) * 100 ."vw + 200px);
+                margin-top: ".($y/$array[2]) * 100 ."vh;' id='object".$i."' class='website'>FIRST</div>";
 
         $objCounter = $objCounter + 1;
     }
+
+    echo '<div class="sidebar">
+        <!-- ADD BUTTONS AND STUFF!-->
+        <div class ="text drag-drop"> TEXT</div>
+        </div>';
 ?>
