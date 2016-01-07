@@ -36,11 +36,10 @@ $objCounter = 1;
             <meta content="utf-8" http-equiv="encoding">
             <link rel="stylesheet" href="style.css">
         </head>
-        
+
         <script src="interact.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="nicEdit.js" type="text/javascript"></script>
-        <script src="script.js"></script>
         <script type="text/javascript">
             bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
         </script>';
@@ -72,5 +71,6 @@ $objCounter = 1;
     echo '<div class="sidebar">
         <!-- ADD BUTTONS AND STUFF!-->
         <div class ="text drag-drop"> TEXT</div>
-        </div>';
+    </div>
+    <script src="script.js"></script>';
 ?>
