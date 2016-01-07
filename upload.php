@@ -31,8 +31,12 @@ if ($uploadOk == 0) {
 exec("./main uploads/fileToUpload.png", $array);
 
 $objCounter = 1;
-    echo 'link rel="stylesheet" href="style.css">
+    echo '<head>
+            <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+            <meta content="utf-8" http-equiv="encoding">
+            <link rel="stylesheet" href="style.css">
         </head>
+        
         <script src="interact.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="nicEdit.js" type="text/javascript"></script>
