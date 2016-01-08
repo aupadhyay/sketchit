@@ -65,7 +65,7 @@ $objCounter = 1;
                 height: ".($height/$array[2]) * 100 ."%;
                 border: 1px solid;
                 margin-left: calc(".($x/$array[1]) * 100 ."vw + 200px);
-                margin-top: ".($y/$array[2]) * 100 ."vh;' id='object".$i."' class='website'>FIRST</div>";
+                margin-top: ".($y/$array[2]) * 100 ."vh;' id='object".$i."' class='website'></div>";
 
         $objCounter = $objCounter + 1;
     }
