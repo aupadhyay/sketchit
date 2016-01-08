@@ -37,6 +37,13 @@ $objCounter = 1;
             <link rel="stylesheet" href="style.css">
         </head>
 
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <style>
+        * {
+            font-family: "Roboto", sans-serif;
+        }
         <script src="interact.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="nicEdit.js" type="text/javascript"></script>
