@@ -44,6 +44,7 @@ $objCounter = 1;
         * {
             font-family: "Roboto", sans-serif;
         }
+        </style>
         <script src="interact.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="nicEdit.js" type="text/javascript"></script>
