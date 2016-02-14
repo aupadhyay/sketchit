@@ -1,75 +1,35 @@
-.website{
-	position: absolute;
-	overflow: auto;
-	background-color: #ccc;
- 	border: dashed 4px transparent;
-	border-radius: 4px;
-	transition: background-color 0.3s;
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
 }
 
-.first{
-	width: 56%;
-	height: 37%;
-	border: 1px solid;
-	margin-left: calc(36.8vw + 200px);
-	margin-top: 16vh;
-
-}
-	
-.second{
-	width: 98%;
-	height: 9%;
-	border: 1px solid;
-	margin-left: calc(1px + 200px);
-	margin-top: 1px;
-}
-.third{
-	width: 56%;
-	height: 37%;
-	border: 1px solid;
-	margin-left: calc(36.8vw + 200px);
-	margin-top: 58vh;
+.left{
+    width: 150px;
 }
 
-.fourth{	
-	width: 28%;
-	height: 81%;
-	border: 1px solid;
-	margin-left: calc(2.9vw + 200px);
-	margin-top: 14.85vh;
+.input-group{
+    margin: 10px auto;
+    width: 50%;
 }
-	
-.sidebar{
-	position:absolute;
-	top: 0; bottom: 0; left: 0;
-	width: 200px;
-	background: #000;
-}
-
-.drag-drop {	
-	display: inline-block;
-	width: 50px;
-	height: 10px;
-	padding: 2em 0.5em;	
-	color: #000;
-	background-color: #29e;
-	border: solid 2px #fff;
-	
-	-webkit-transform: translate(0px, 0px);
-		transform: translate(0px, 0px);
-	
-	transition: background-color 0.3s;
-}
-.drag-drop.can-drop {
-	color: #000;
- 	background-color: #4e4;
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
 }
 
-.drop-target {
- 	background-color: #29e;
- 	border-color: #fff;
-  	border-style: solid;
-}
-.drop-active {
- 	border-color: #aaa;	
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+  width: 50% !important;
 }
