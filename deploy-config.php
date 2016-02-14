@@ -48,7 +48,7 @@ define('TARGET_DIR', '/var/www/html/sketchit/');
 
 /**
  * Whether to delete the files that are not in the repository but are on the
- * local (server) machine.
+ * local (server) machine.x
  *
  * !!! WARNING !!! This can lead to a serious loss of data if you're not
  * careful. All files that are not in the repository are going to be deleted,
