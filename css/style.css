@@ -1,75 +1,94 @@
-.website{
-	position: absolute;
-	overflow: auto;
-	background-color: #ccc;
- 	border: dashed 4px transparent;
-	border-radius: 4px;
-	transition: background-color 0.3s;
-}
+body{
+        font-family: Roboto;
+    }
+    #mainJumbo{ 
+      background-image: url(https://static.pexels.com/photos/2855/landscape-mountains-nature-lake-large.jpg);
+      background-size: 100% ;
+      background-position: 0px -265px; 
+     height: 99vh;
+      text-align: center;
+      margin-top: -50px;
+    }
 
-.first{
-	width: 56%;
-	height: 37%;
-	border: 1px solid;
-	margin-left: calc(36.8vw + 200px);
-	margin-top: 16vh;
+    h2.jumbotron { 
+       position: absolute; 
+       margin-bottom: 300px; 
+       left: 0; 
+       width: 100%; 
 
-}
-	
-.second{
-	width: 98%;
-	height: 9%;
-	border: 1px solid;
-	margin-left: calc(1px + 200px);
-	margin-top: 1px;
-}
-.third{
-	width: 56%;
-	height: 37%;
-	border: 1px solid;
-	margin-left: calc(36.8vw + 200px);
-	margin-top: 58vh;
-}
+    }
 
-.fourth{	
-	width: 28%;
-	height: 81%;
-	border: 1px solid;
-	margin-left: calc(2.9vw + 200px);
-	margin-top: 14.85vh;
-}
-	
-.sidebar{
-	position:absolute;
-	top: 0; bottom: 0; left: 0;
-	width: 200px;
-	background: #000;
-}
+    .navbar-nav li{
+        font-family: Roboto;
+    }
+.modal-dialog  {width:25%;}
 
-.drag-drop {	
-	display: inline-block;
-	width: 50px;
-	height: 10px;
-	padding: 2em 0.5em;	
-	color: #000;
-	background-color: #29e;
-	border: solid 2px #fff;
-	
-	-webkit-transform: translate(0px, 0px);
-		transform: translate(0px, 0px);
-	
-	transition: background-color 0.3s;
+/* navbar */
+.navbar-default {
+    background-color:#0091EA;
+    border-color: #01579B;
 }
-.drag-drop.can-drop {
-	color: #000;
- 	background-color: #4e4;
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
 }
-
-.drop-target {
- 	background-color: #29e;
- 	border-color: #fff;
-  	border-style: solid;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
 }
-.drop-active {
- 	border-color: #aaa;	
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #01579B;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #0277BD;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #01579B;
+    border-bottom-color: #01579B;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
 }

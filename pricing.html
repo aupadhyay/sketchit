@@ -6,12 +6,83 @@
             <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
             <!-- Latest compiled and minified JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anymous"></script>   
-            <link rel="stylesheet" type="text/css" href="style.css"> 
+            <link rel="stylesheet" type="text/css" href="css/style.css"> 
             
             
             
     </head>
 	<body>
+				<div id="myModal" class="modal fade" role="dialog">
+  			<div class="modal-dialog">
+				<div class="modal-content">
+      				<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Log In</h4>
+      				</div>
+      				<div class="modal-body">
+       					<form>
+       						<div class="input-group">
+       							<span class="input-group-addon">Username</span>
+       							<input type="text" class="form-control">
+       						</div>
+       						<br>
+       						<div class="input-group">
+       							<span class="input-group-addon">Password</span>
+       							<input type="password" class="form-control">
+       						</div>
+       						<br>
+       						<input type="submit" value="Log In" class="form-control">
+       						 
+       					</form>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+
+  			</div>
+		</div>
+		<div id="myModalSignUp" class="modal fade" role="dialog">
+  			<div class="modal-dialog">
+				<div class="modal-content">
+      				<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Sign Up</h4>
+      				</div>
+      				<div class="modal-body">
+       					<form>
+       						<div class="input-group">
+       							<span class="input-group-addon">First Name</span>
+       							<input type="text" class="form-control">
+       						</div>
+       						<br>
+       						<div class="input-group">
+       							<span class="input-group-addon">Last Name</span>
+       							<input type="text" class="form-control">
+       						</div>
+       						<br>
+       						<div class="input-group">
+       							<span class="input-group-addon">Username</span>
+       							<input type="text" class="form-control">
+       						</div>
+       						<br>
+       						<div class="input-group">
+       							<span class="input-group-addon">Password</span>
+       							<input type="password" class="form-control">
+       						</div>
+       						<br>
+       						<input type="submit" value="Sign Up" class="form-control">
+       						 
+       					</form>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+
+  			</div>
+		</div>
+		
 		<div class = "navbar navbar-default navbar-static-top">
 			<div class = "container">
 				
@@ -23,6 +94,12 @@
         			</button>
         			
         		</div>
+
+
+        		
+				
+
+
 
 				<div class = "collapse navbar-collapse navHeaderCollapse">
 
@@ -46,16 +123,15 @@
 
 					</ul>
 					<ul class = "nav navbar-nav navbar-right">
-						<li> <a href = "#login">Log In</a></li>
-						<li> <a href = "#signup">Sign Up</a></li>
-
+						<li> <a href = "#login" data-toggle="modal" data-target="#myModal">Log In</a></li>
+						<li> <a href = "#signup" data-toggle="modal" data-target="#myModalSignUp">Sign Up</a></li>
+						
 
 					</ul>
 				</div>
 
 			</div>
 		</div>
-
 		<div class ="container">
 			<div class = "jumbotron">
 				<p class = "text-center">Subscription Plans<br>Supercharge your web page by going 'Pro'</p>
@@ -108,13 +184,16 @@
 				</div>
 
 				<div class = "col-md-2">
-					<p class = "text-center">Starter</p>
+					<p class = "text-center" style = "font-size:18px;color:#0087be;">Starter</p>
+					
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center">Business</p>
+					<p class = "text-center" style = "font-size:18px;color:#0087be;">Professional</p>
+					
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center">Pro</p>
+					<p class = "text-center" style = "font-size:18px;color:#0087be;">Enterprise</p>
+					
 				</div>
 
 			</div>
@@ -241,7 +320,7 @@
 					</div>
 
 					<div class = "col-md-2">
-						<p class = "text-center"></p>
+						<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 					</div>
 					<div class = "col-md-2">
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
@@ -275,7 +354,7 @@
 					</div>
 
 					<div class = "col-md-2">
-						<p class = "text-center"></p>
+						<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 					</div>
 					<div class = "col-md-2">
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
@@ -309,7 +388,7 @@
 					</div>
 
 					<div class = "col-md-2">
-						<p class = "text-center"></p>
+						<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 					</div>
 					<div class = "col-md-2">
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
@@ -343,7 +422,7 @@
 					</div>
 
 					<div class = "col-md-2">
-						<p class = "text-center"></p>
+						<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 					</div>
 					<div class = "col-md-2">
 						<p class = "text-center">2% commision</p>
@@ -377,7 +456,7 @@
 					</div>
 
 					<div class = "col-md-2">
-						<p class = "text-center"></p>
+						<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 					</div>
 					<div class = "col-md-2">
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
@@ -410,10 +489,10 @@
 				</div>
 
 				<div class = "col-md-2">
-					<p class = "text-center"></p>
+					<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center"></p>
+					<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 				</div>
 				<div class = "col-md-2">
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
@@ -452,7 +531,7 @@
 					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center"></p>
+					<p class = "text-center"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-close-512.png" width = "24px" height = "24px"></p>
 				</div>
 			
 			</div>
@@ -506,7 +585,7 @@
 
 				<div class = "row">
 				<div class = "col-md-5">
-					<p class = "spacing">Picture Based Layout</p>
+					
 				</div>
 
 				<div class = "col-md-1">
@@ -514,26 +593,35 @@
 				</div>
 
 				<div class = "col-md-2">
-					<p style="text-align:center;"><img src="https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/circle-check-512.png" width = "24px" height = "24px"></p>
+					<p class ="text-center" style = "font-size:18px">$8.99</p>
+					<p class = "text-center" style = "font-size:13px;color:#87a6bc"><i>per month</i></p>
+					<button type="button" class="btn btn-info btn-lg btn-block">Get Started</button>
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center">Business</p>
+					<p class = "text-center" style = "font-size:18px">$12.99</p>
+					<p class = "text-center" style = "font-size:13px;color:#87a6bc"><i>per month</i></p>
+					<button type="button" class="btn btn-info btn-lg btn-block">Get Started</button>
 				</div>
 				<div class = "col-md-2">
-					<p class = "text-center">Pro</p>
+					<p class = "text-center" style = "font-size:18px">$15.99</p>
+					<p class = "text-center" style = "font-size:13px;color:#87a6bc";><i>per month</i></p>
+					<button type="button" class="btn btn-info btn-lg btn-block">Get Started</button>
 				</div>
-			
-			</div>
-
-			<div class = "row">
-				<div class = "col-md-12" style = "background-color:white;height:10px"></div>
-
-			</div>
 
 				<div class = "row">
-					<div class = "col-md-12" style ="background-color:#d9d9d9; height:1px"></div>
+					<div class = "col-md-12">
+
+						<div style = "height:50px"></div>
+
+					</div>
+
+
 				</div>
-v
+			
+			</div> 
+
+			
+
 
 
 
