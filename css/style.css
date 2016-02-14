@@ -1,3 +1,99 @@
+
+body{
+        font-family: Roboto;
+    }
+    #mainJumbo{ 
+      background-image: url(https://static.pexels.com/photos/2855/landscape-mountains-nature-lake-large.jpg);
+      background-size: 100% ;
+      background-position: 0px -265px; 
+     height: 99vh;
+      text-align: center;
+      margin-top: -50px;
+    }
+
+    h2.jumbotron { 
+       position: absolute; 
+       margin-bottom: 300px; 
+       left: 0; 
+       width: 100%; 
+
+    }
+
+    .navbar-nav li{
+        font-family: Roboto;
+    }
+.modal-dialog  {width:25%;}
+
+/* navbar */
+.navbar-default {
+    background-color:#0091EA;
+    border-color: #01579B;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #01579B;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #0277BD;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #01579B;
+    border-bottom-color: #01579B;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -33,7 +129,6 @@ input[readonly] {
   cursor: text !important;
   width: 50% !important;
 }
-
     
 .sidebar{
     position:absolute;
