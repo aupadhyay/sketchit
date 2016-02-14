@@ -33,3 +33,39 @@ input[readonly] {
   cursor: text !important;
   width: 50% !important;
 }
+
+    
+.sidebar{
+    position:absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 200px;
+    background: #000;
+}
+
+.drag-drop {    
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    padding: 2em 0.5em; 
+    color: #000;
+    background-color: #29e;
+    border: solid 2px #fff;
+    
+    -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    
+    transition: background-color 0.3s;
+}
+.drag-drop.can-drop {
+    color: #000;
+    background-color: #4e4;
+}
+
+.drop-target {
+    background-color: #29e;
+    border-color: #fff;
+    border-style: solid;
+}
+.drop-active {
+    border-color: #aaa; 
+}
