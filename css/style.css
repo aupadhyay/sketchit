@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
         font-family: Roboto;
     }
@@ -92,3 +93,40 @@ body{
         color: #333;
     }
 }
+=======
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+}
+
+.left{
+    width: 150px;
+}
+
+.input-group{
+    margin: 10px auto;
+    width: 50%;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+  width: 50% !important;
+}
+>>>>>>> origin/master
