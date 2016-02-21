@@ -19,6 +19,23 @@ body{
 
     }
 
+    #mainJumboP{
+        background-image: url(http://einfogames.com/wp-content/blogs.dir/11/files/2013/11/deep-green-blue-background-dark-edition-1200x637.jpg);
+        background-size: 100%;
+        background-position: 200px;
+        height: :100vh;
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    .phototext{
+        position: absolute;
+        margin-bottom: :300px;
+        left:0;
+        width:100%;
+
+    }
+
     .navbar-nav li{
         font-family: Roboto;
     }
@@ -129,6 +146,7 @@ input[readonly] {
   cursor: text !important;
   width: 50% !important;
 }
+<<<<<<< Updated upstream
     
 .sidebar{
     position:absolute;
